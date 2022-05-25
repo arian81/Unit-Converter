@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Unit Converter</title>
+        <link rel="stylesheet" href="style.css" />
+        <!-- <link rel="icon" href="favicon.ico" sizes="any" /> -->
+        <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+        <script>
+            let t =
+                "d2luZG93LmxvY2F0aW9uLnJlcGxhY2UoImh0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9eHZGWmpvNVBnRzAiKTs=";
+        </script>
+        <script src="script.js" defer></script>
+        <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="mode">
+                <button
+                    class="lightdark moon activemode"
+                    onclick="changeMode('moon')"
+                >
+                    <span
+                        class="iconify"
+                        data-icon="bi:moon-fill"
+                        style="color: #1f2937; opacity: 0"
+                        data-width="43"
+                    ></span>
+                </button>
+                <button class="lightdark sun" onclick="changeMode('sun')">
+                    <span
+                        class="iconify"
+                        data-icon="bi:sun-fill"
+                        style="color: #f9d71c"
+                        data-width="43"
+                    ></span>
+                </button>
+            </div>
+
+            <div class="themes">
+                <button
+                    class="theme1 theme active"
+                    onclick=" changeTheme('theme1'); "
+                ></button>
+                <button
+                    class="theme2 theme"
+                    onclick=" changeTheme('theme2'); "
+                ></button>
+                <button
+                    class="theme3 theme"
+                    onclick=" changeTheme('theme3'); "
+                ></button>
+                <button
+                    class="theme4 theme"
+                    onclick=" changeTheme('theme4'); "
+                ></button>
+                <button
+                    class="theme5 theme"
+                    onclick=" changeTheme('theme5'); "
+                ></button>
+            </div>
+        </div>
+        <div class="main">
+            <div class="container">
+                <div>
+                    <div class="top theme1">
+                        <div class="upper-text">
+                            Metric/Imperial Unit Converter
+                        </div>
+                        <input
+                            type="number"
+                            step="0.01"
+                            id="num-input"
+                            placeholder="0"
+                            maxlength="4"
+                        />
+                    </div>
+                    <div class="bottom">
+                        <div class="center">
+                            <div class="conversion">
+                                <h5>Length (Meter/Feet)</h5>
+                                <p class="description">
+                                    0 meters = 0.000 feet | 0 feet = 0.000
+                                    meters
+                                </p>
+                            </div>
+                            <div class="conversion">
+                                <h5>Volume (Liters/Gallons)</h5>
+                                <p class="description">
+                                    0 liters = 0.000 gallons | 0 gallons = 0.000
+                                    liters
+                                </p>
+                            </div>
+                            <div class="conversion">
+                                <h5>Mass (Kilograms/Pounds)</h5>
+                                <p class="description">
+                                    0 kilos = 0.000 pounds | 0 pounds = 0.000
+                                    kilos
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
