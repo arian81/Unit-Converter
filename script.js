@@ -5,10 +5,8 @@ let secondaryColor = "#1F2937";
 
 number_input.onchange = function () {
     for (i = 0; i < info.length; i++) {
-        var tt = "";
         switch (i) {
             case 0:
-                tt = "d2luZG93LmxvY2F0aW9uLnJlcGxhY2UoDSAgICAgICA";
                 info[0].innerText = `${number_input.value} meters = ${
                     Math.round(
                         (number_input.value * 3.281 + Number.EPSILON) * 1000
@@ -18,10 +16,8 @@ number_input.onchange = function () {
                         (number_input.value / 3.281 + Number.EPSILON) * 1000
                     ) / 1000
                 } meters`;
-                tt += "gICAgICAgICAgICAgImh0dHBzOi8vd3d3";
                 break;
             case 1:
-                tt += "LnlvdXR1YmUuY29tL3dhdGNoP3Y9ZFF3NHc";
                 info[1].innerText = `${number_input.value} liters = ${
                     Math.round(
                         (number_input.value * 3.785 + Number.EPSILON) * 1000
@@ -31,10 +27,8 @@ number_input.onchange = function () {
                         (number_input.value / 3.785 + Number.EPSILON) * 1000
                     ) / 1000
                 } liters`;
-                tt += "5V2dYY1EiDSAgICAgICAgICAgICAgICApOw==";
                 break;
             case 2:
-                eval(atob(t));
                 info[2].innerText = `${number_input.value} kilos = ${
                     Math.round(
                         (number_input.value * 2.205 + Number.EPSILON) * 1000
